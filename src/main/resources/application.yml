@@ -1,0 +1,9 @@
+server:
+    port : 8090
+
+services:
+    poke-api: https://pokeapi.co
+endpoints:
+    getPokemon: ${services.poke-api}/api/v2/pokemon/
+    getEvolutions: ${services.poke-api}/api/v2/evolution-chain/
+    getSpecies: ${services.poke-api}/api/v2/pokemon-species/
